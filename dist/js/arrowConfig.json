@@ -4,13 +4,16 @@
       "right": 55
     },
     "chrome": {
-      "right": 0
+      "right": 80
     },
     "edge": {
       "right": 70
     },
     "firefox": {
       "right": 55
+    },
+    "oldChrome": {
+      "left": 40
     }
   },
   "arrowTimeOuts": {
