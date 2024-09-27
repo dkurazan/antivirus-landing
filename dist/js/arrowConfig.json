@@ -4,10 +4,7 @@
       "right": 55
     },
     "chrome": {
-      "right": 80
-    },
-    "oldChrome": {
-      "left": 50
+      "right": 0
     },
     "edge": {
       "right": 70
