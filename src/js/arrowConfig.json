@@ -1,0 +1,20 @@
+{
+  "downloadButtonCoords": {
+    "opera": {
+      "right": 55
+    },
+    "chrome": {
+      "right": 80
+    },
+    "edge": {
+      "right": 70
+    },
+    "firefox": {
+      "right": 55
+    }
+  },
+  "arrowTimeOuts": {
+    "showAfter": 1500,
+    "hideAfter": 4500
+  }
+}

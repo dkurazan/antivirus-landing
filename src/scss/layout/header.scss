@@ -1,0 +1,50 @@
+@use "../variables.scss" as *;
+
+header {
+  background-color: $color-black;
+  padding: 13px 0 6px 0;
+
+  p {
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.17;
+    color: $color-yellow;
+
+    span {
+      display: flex;
+      align-items: center;
+      color: $color-white;
+      font-weight: 400;
+
+      sup {
+        font-size: 10px;
+        align-self: self-start;
+        font-weight: 100;
+        transform: translate(1px, 5px);
+      }
+
+      &::before {
+        content: '';
+        position: relative;
+        bottom: 2px;
+        display: inline-block;
+        width: 1px;
+        height: 30px;
+        background-color: $color-white;
+        margin: 0 11px 0 11px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $viewport-sm) {
+  header {
+    p {
+      font-size: 14px;
+    }
+  }
+}

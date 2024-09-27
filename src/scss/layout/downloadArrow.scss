@@ -1,0 +1,70 @@
+@use "../variables.scss" as *;
+
+.arrow {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 159px;
+  font-size: 50px;
+
+  visibility: hidden;
+  opacity: 0;
+  animation: 0.5s linear 1s infinite alternate debounce;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, transform  0.5s ease-in-out;
+
+  &__icon {
+    position: relative;
+    left: -5px;
+    bottom: -8px;
+    margin-top: -10px;
+  }
+
+  &__wrapper {
+    background-color: $color-blue;
+    color: white;
+    padding: 7px 23px 32px;
+    position: relative;
+  }
+
+  &__title {
+    font-family: "Bebas Neue", system-ui;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__suptitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  &.old-chrome {
+    rotate: 180deg;
+
+    .arrow__wrapper {
+      rotate: 180deg;
+      padding: 32px 23px 7px;
+    }
+  }
+}
+
+.arrow.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes debounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@media screen and (max-width: $viewport-md) {
+  .arrow {
+    display: none;
+  }
+}
